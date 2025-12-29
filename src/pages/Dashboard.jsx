@@ -159,7 +159,7 @@ const Dashboard = () => {
                       ) : (
                         <>
                           <UploadCloud className='size-14 stroke-1'/>
-                          <p>Upload resume</p>
+                          <p>Click to upload resume</p>
                         </>
                       )}
                     </div>

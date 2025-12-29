@@ -20,19 +20,6 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      //  if(state === "login"){
-      //        // await api.post(`/api/users/${state}`, formData)
-      //     // await api.post('/api/users/register', formData, { withCredentials: true })
-      //     const { data } = await api.post('/api/users/register', formData)
-      //     dispatch(login(data))
-      //     localStorage.setItem('token', data.token)
-      //     toast.success(data.message)
-      //  }else {
-      //     const { data } = await api.post('/api/users/login', formData)
-      //     dispatch(login(data))
-      //     localStorage.setItem('token', data.token)
-      //     toast.success(data.message)
-      //  }
       let response;
 
       if (mode === "login") {
@@ -109,14 +96,14 @@ const Login = () => {
             required
           />
         </div>
-        <div className="mt-4 text-left text-green-500">
+        <div className="mt-4 text-left text-[#4498A9]">
           <button className="text-sm" type="reset">
             Forget password?
           </button>
         </div>
         <button
           type="submit"
-          className="mt-2 w-full h-11 rounded-full text-white bg-green-500 hover:opacity-90 transition-opacity"
+          className="mt-2 w-full h-11 rounded-full text-white bg-[#4498A9] hover:opacity-90 transition-opacity"
         >
           {mode === "login" ? "Login" : "Sign up"}
         </button>
@@ -129,7 +116,7 @@ const Login = () => {
           {mode === "login"
             ? "Don't have an account?"
             : "Already have an account?"}{" "}
-          <a href="#" className="text-green-500 hover:underline">
+          <a href="#" className="text-[#4498A9] hover:underline">
             click here
           </a>
         </p>
